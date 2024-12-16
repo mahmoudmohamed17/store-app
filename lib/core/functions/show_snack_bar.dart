@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../utilities/app_styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
 void showSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(SnackBar(

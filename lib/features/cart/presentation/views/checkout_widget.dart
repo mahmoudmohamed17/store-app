@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import '../../../../constanst.dart';
-import '../../../../core/utilities/app_styles.dart';
 import '../../../../core/widgets/custom_button.dart';
 
 class CheckoutWidget extends StatelessWidget {

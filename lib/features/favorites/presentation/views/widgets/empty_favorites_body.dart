@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/utilities/app_styles.dart';
-import '../../../../../core/utilities/assets_data.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
+import 'package:store_app/core/utilities/assets_data.dart';
 
 class EmptyFavoritesBody extends StatefulWidget {
   const EmptyFavoritesBody({

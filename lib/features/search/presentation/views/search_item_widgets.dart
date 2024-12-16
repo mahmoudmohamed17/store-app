@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../core/utilities/assets_data.dart';
+import 'package:store_app/core/utilities/assets_data.dart';
 import 'search_product_item.dart';
 
 class SearchItemWidgets extends StatelessWidget {

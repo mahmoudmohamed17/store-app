@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
-import '../../../../../core/utilities/app_styles.dart';
 
 class RatingWidget extends StatelessWidget {
   const RatingWidget({super.key, required this.rate});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
-import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key, required this.text});

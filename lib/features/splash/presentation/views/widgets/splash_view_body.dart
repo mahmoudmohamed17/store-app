@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/core/utilities/app_router.dart';
-import 'package:store_app/core/utilities/assets_data.dart';
+import 'package:store_app/core/utilities/assets.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -23,7 +23,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image(height: 250, width: 250, image: AssetImage(AssetsData.logo))
+          Image.asset(Assets.imagesAppIcon, height: 200, width: 200,),
         ],
       ),
     );
@@ -31,7 +31,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
   void navigate() {
     Future.delayed(const Duration(seconds: 3), () {
-      GoRouter.of(context).go(AppRouter.kLoginView);
+      GoRouter.of(context).pushReplacement(AppRouter.kLoginView);
     });
   }
 }

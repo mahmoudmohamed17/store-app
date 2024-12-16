@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/widgets/custom_button.dart';
 import 'package:store_app/core/widgets/custom_text_field.dart';
 import 'package:store_app/features/auth/data/models/user_info_model.dart';
 import 'package:store_app/features/auth/presentation/manager/auth_cubit/auth_cubit.dart';
 import 'package:store_app/features/auth/presentation/views/widgets/ask_about_account.dart';
-
 import '../../../../../core/functions/setup_service_locator.dart';
 import '../../../../../core/functions/show_snack_bar.dart';
 import '../../../domain/auth_repo.dart';

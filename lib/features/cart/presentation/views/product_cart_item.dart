@@ -1,10 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import 'package:store_app/features/cart/presentation/views/add_product_counter_widget.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
-import '../../../../core/utilities/app_styles.dart';
 
 class ProductCartItem extends StatelessWidget {
   const ProductCartItem({super.key, required this.product});

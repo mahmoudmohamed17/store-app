@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/features/favorites/presentation/manager/favorites_cubit/favorites_cubit.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
 import 'package:store_app/features/home/presentation/views/widgets/rating_widget.dart';
 
-import '../../../../../core/utilities/app_styles.dart';
 
 class FavoriteProductItem extends StatelessWidget {
   const FavoriteProductItem({super.key, required this.product});
