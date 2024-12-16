@@ -3,13 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:store_app/features/auth/presentation/manager/auth_cubit/auth_cubit.dart';
-
+import 'package:store_app/features/auth/presentation/views/widgets/ask_about_account.dart';
 import '../../../../../core/utilities/app_styles.dart';
-import '../../../../../core/utilities/assets_data.dart';
 import '../../../../../core/functions/setup_service_locator.dart';
 import '../../../../../core/functions/show_snack_bar.dart';
 import '../../../../../core/widgets/custom_button.dart';
-import '../../../../../core/widgets/custom_image_widget.dart';
 import '../../../../../core/widgets/custom_text_field.dart';
 import '../../../domain/auth_repo.dart';
 
@@ -42,22 +40,18 @@ class _RegisterBodyState extends State<RegisterBody> {
           child: Form(
             key: formKey,
             child: ListView(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               children: [
                 const SizedBox(
                   height: 50,
                 ),
-                CustomImageWidget(image: AssetsData.logo),
-                const SizedBox(
-                  height: 20,
-                ),
                 const Text(
-                  textAlign: TextAlign.center,
-                  'Register',
+                  textAlign: TextAlign.start,
+                  'Create an account',
                   style: AppStyles.medium24,
                 ),
                 const SizedBox(
-                  height: 35,
+                  height: 20,
                 ),
                 CustomTextFormField(
                   onFieldSubmitted: (value) {
@@ -119,6 +113,15 @@ class _RegisterBodyState extends State<RegisterBody> {
                   textColor: Colors.white,
                   color: Colors.black,
                 ),
+                const SizedBox(
+                  height: 25,
+                ),
+                AskAboutAccount(
+                    onTap: () {
+                      GoRouter.of(context).pop();
+                    },
+                    title: 'Already have an account?  ',
+                    action: 'Sing in'),
                 const SizedBox(
                   height: 50,
                 ),

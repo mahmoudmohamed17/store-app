@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => CartCubit()),
       ],
       child: MaterialApp.router(
+        theme: ThemeData(fontFamily: 'Poppins'),
         debugShowCheckedModeBanner: false,
         routerConfig: AppRouter.router,
       ),

@@ -10,6 +10,7 @@ import 'package:store_app/core/widgets/custom_image_widget.dart';
 import 'package:store_app/core/widgets/custom_text_field.dart';
 import 'package:store_app/features/auth/data/models/user_info_model.dart';
 import 'package:store_app/features/auth/presentation/manager/auth_cubit/auth_cubit.dart';
+import 'package:store_app/features/auth/presentation/views/widgets/ask_about_account.dart';
 
 import '../../../../../core/functions/setup_service_locator.dart';
 import '../../../../../core/functions/show_snack_bar.dart';
@@ -51,17 +52,13 @@ class _LoginBodyState extends State<LoginBody> {
                 const SizedBox(
                   height: 50,
                 ),
-                CustomImageWidget(image: AssetsData.logo),
-                const SizedBox(
-                  height: 20,
-                ),
                 const Text(
-                  textAlign: TextAlign.center,
-                  'Sign in',
+                  textAlign: TextAlign.start,
+                  'Welcome back!',
                   style: AppStyles.medium24,
                 ),
                 const SizedBox(
-                  height: 35,
+                  height: 20,
                 ),
                 CustomTextFormField(
                   onFieldSubmitted: (value) {
@@ -103,27 +100,13 @@ class _LoginBodyState extends State<LoginBody> {
                 const SizedBox(
                   height: 50,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text(
-                      'Don\'t have an accouunt?   ',
-                      style: AppStyles.semiBold16,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        GoRouter.of(context).push(AppRouter.kRegisterView);
-                        formKey.currentState!.reset();
-                      },
-                      child: Text(
-                        'Register',
-                        style: AppStyles.semiBold16.copyWith(
-                          decoration: TextDecoration.underline,
-                          decorationThickness: 2.2,
-                        ),
-                      ),
-                    )
-                  ],
+                AskAboutAccount(
+                  title: 'Don\'t have an accouunt?   ',
+                  action: 'Create account',
+                  onTap: () {
+                    GoRouter.of(context).push(AppRouter.kRegisterView);
+                    formKey.currentState!.reset();
+                  },
                 )
               ],
             ),
