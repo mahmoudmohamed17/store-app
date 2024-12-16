@@ -109,7 +109,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                       setState(() {});
                     }
                   },
-                  text: 'Register',
+                  text: 'Create account',
                   textColor: Colors.white,
                   color: Colors.black,
                 ),
@@ -121,7 +121,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                       GoRouter.of(context).pop();
                     },
                     title: 'Already have an account?  ',
-                    action: 'Sing in'),
+                    action: 'Sign in'),
                 const SizedBox(
                   height: 50,
                 ),

@@ -5,6 +5,7 @@ abstract class AppStyles {
       TextStyle(fontSize: 10, fontWeight: FontWeight.w600);
   static const medium12 = TextStyle(fontSize: 12, fontWeight: FontWeight.w500);
   static const medium14 = TextStyle(fontSize: 14, fontWeight: FontWeight.w500);
+  static const regular18 = TextStyle(fontSize: 18, fontWeight: FontWeight.w400);
   static const semiBold16 =
       TextStyle(fontSize: 16, fontWeight: FontWeight.w600);
   static const semiBold20 =

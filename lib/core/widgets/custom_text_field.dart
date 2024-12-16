@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/constanst.dart';
+import 'package:store_app/core/functions/build_border.dart';
 import 'package:store_app/core/utilities/app_styles.dart';
 
 class CustomTextFormField extends StatefulWidget {
@@ -31,45 +31,28 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           return null;
         }
       },
-      style: AppStyles.semiBold20,
+      style: AppStyles.regular18,
       onFieldSubmitted: widget.onFieldSubmitted,
       obscureText: (widget.hintText != 'Password') ? false : obscureText,
       keyboardType: widget.textInputType,
       decoration: InputDecoration(
         hintText: widget.hintText,
-        hintStyle: AppStyles.semiBold16.copyWith(color: Colors.grey),
+        hintStyle: AppStyles.regular18.copyWith(color: Colors.grey),
         suffixIcon: (widget.hintText == 'Password')
-            ? (obscureText == true)
-                ? Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: IconButton(
-                        padding: EdgeInsets.zero,
-                        onPressed: () {
-                          setState(() {
-                            obscureText = false;
-                          });
-                        },
-                        icon: const Icon(
-                          Icons.visibility_off,
-                          size: 32,
-                          color: Colors.black,
-                        )),
-                  )
-                : Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: IconButton(
-                        padding: EdgeInsets.zero,
-                        onPressed: () {
-                          setState(() {
-                            obscureText = true;
-                          });
-                        },
-                        icon: const Icon(
-                          Icons.visibility,
-                          size: 32,
-                          color: Colors.black,
-                        )),
-                  )
+            ? Padding(
+                padding: const EdgeInsets.only(right: 20),
+                child: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        obscureText ? obscureText = false : obscureText = true;
+                      });
+                    },
+                    icon: Icon(
+                      obscureText ? Icons.visibility_off : Icons.visibility,
+                      size: 32,
+                      color: Colors.black,
+                    )),
+              )
             : Padding(
                 padding: const EdgeInsets.only(right: 27),
                 child: Icon(
@@ -78,19 +61,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                   color: Colors.black,
                 ),
               ),
-        contentPadding: const EdgeInsets.all(18),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24),
-          borderSide: const BorderSide(color: kPrimaryColor),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24),
-          borderSide: const BorderSide(color: kPrimaryColor),
-        ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(24),
-          // borderSide: const BorderSide(color: Colors.transparent),
-        ),
+        contentPadding: const EdgeInsets.all(16),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(),
       ),
     );
   }

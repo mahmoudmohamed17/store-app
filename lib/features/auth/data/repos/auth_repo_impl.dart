@@ -37,7 +37,7 @@ class AuthRepoImpl extends AuthRepo {
 
   @override
   UserInfoModel getUserData({required String email}) {
-    var emailIdBox =Hive.box(kEmailIdBox);
+    var emailIdBox = Hive.box(kEmailIdBox);
     UserInfoModel userInfoModel;
     userInfoModel = emailIdBox.get(email);
     return userInfoModel;

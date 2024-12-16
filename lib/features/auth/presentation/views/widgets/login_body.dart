@@ -4,9 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
-import 'package:store_app/core/utilities/assets_data.dart';
 import 'package:store_app/core/widgets/custom_button.dart';
-import 'package:store_app/core/widgets/custom_image_widget.dart';
 import 'package:store_app/core/widgets/custom_text_field.dart';
 import 'package:store_app/features/auth/data/models/user_info_model.dart';
 import 'package:store_app/features/auth/presentation/manager/auth_cubit/auth_cubit.dart';
@@ -101,7 +99,7 @@ class _LoginBodyState extends State<LoginBody> {
                   height: 50,
                 ),
                 AskAboutAccount(
-                  title: 'Don\'t have an accouunt?   ',
+                  title: 'Don\'t have an accouunt?  ',
                   action: 'Create account',
                   onTap: () {
                     GoRouter.of(context).push(AppRouter.kRegisterView);
