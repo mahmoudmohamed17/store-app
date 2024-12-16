@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
-
 import '../../../../constanst.dart';
 import '../../../../core/utilities/app_styles.dart';
 import '../../../../core/widgets/custom_button.dart';
@@ -28,12 +27,13 @@ class CheckoutWidget extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    const  Text(
+                      const Text(
                         'Total:',
                         style: AppStyles.semiBold16,
                       ),
                       Text(
-                        r'$''${BlocProvider.of<CartCubit>(context).totalPrice}',
+                        r'$'
+                        '${BlocProvider.of<CartCubit>(context).totalPrice}',
                         style: AppStyles.semiBold16,
                       )
                     ],
@@ -41,13 +41,10 @@ class CheckoutWidget extends StatelessWidget {
                   const SizedBox(
                     height: 40,
                   ),
-                  CustomButton(
+                  const CustomButton(
                     text: 'Checkout',
                     textColor: Colors.white,
-                    height: 55,
-                    width: 200,
                     color: Colors.black,
-                    borderRadiusGeometry: BorderRadius.circular(32),
                   ),
                 ],
               ),

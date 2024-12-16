@@ -51,10 +51,8 @@ class ProfileViewBody extends StatelessWidget {
           CustomButton(
             text: 'Log out',
             textColor: Colors.black,
-            height: 50,
-            width: 200,
+         
             color: kPrimaryColor,
-            borderRadiusGeometry: BorderRadius.circular(24),
             onTap: () {
               showAlertingDialog(context);
             },

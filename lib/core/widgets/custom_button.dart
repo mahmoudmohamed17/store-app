@@ -6,20 +6,14 @@ class CustomButton extends StatelessWidget {
       {super.key,
       required this.text,
       this.onTap,
-      this.borderRadiusGeometry = BorderRadius.zero,
       this.color = Colors.white,
       required this.textColor,
-      required this.height,
-      required this.width,
-      this.fontWeight});
+      });
   final String text;
   final Function()? onTap;
-  final BorderRadiusGeometry borderRadiusGeometry;
   final Color color;
   final Color textColor;
-  final double height;
-  final double width;
-  final FontWeight? fontWeight;
+  
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

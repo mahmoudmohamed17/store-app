@@ -118,9 +118,6 @@ class _RegisterBodyState extends State<RegisterBody> {
                   text: 'Register',
                   textColor: Colors.white,
                   color: Colors.black,
-                  height: 50,
-                  width: 150,
-                  borderRadiusGeometry: BorderRadius.circular(35),
                 ),
                 const SizedBox(
                   height: 50,

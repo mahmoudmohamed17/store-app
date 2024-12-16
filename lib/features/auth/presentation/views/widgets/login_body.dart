@@ -87,9 +87,6 @@ class _LoginBodyState extends State<LoginBody> {
                   text: 'Sign in',
                   textColor: Colors.white,
                   color: Colors.black,
-                  height: 50,
-                  width: 150,
-                  borderRadiusGeometry: BorderRadius.circular(35),
                   onTap: () async {
                     if (formKey.currentState!.validate()) {
                       BlocProvider.of<AuthCubit>(context)

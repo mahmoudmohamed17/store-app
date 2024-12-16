@@ -23,9 +23,6 @@ void showAlertingDialog(BuildContext context) {
               text: 'Yes',
               textColor: Colors.white,
               color: Colors.red,
-              height: 40,
-              width: 100,
-              borderRadiusGeometry: BorderRadius.circular(25),
               onTap: () {
                 GoRouter.of(context).go(AppRouter.kLoginView);
                 activeIndex = 0;
@@ -35,9 +32,6 @@ void showAlertingDialog(BuildContext context) {
               text: 'No',
               textColor: Colors.white,
               color: Colors.green,
-              height: 40,
-              width: 100,
-              borderRadiusGeometry: BorderRadius.circular(25),
               onTap: () {
                 GoRouter.of(context).pop();
               },
