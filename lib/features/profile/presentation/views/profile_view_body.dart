@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/constanst.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/assets_data.dart';
-import 'package:store_app/core/utilities/functions/show_alerting_dialog.dart';
+import 'package:store_app/core/functions/show_alerting_dialog.dart';
 import 'package:store_app/core/widgets/custom_app_bar.dart';
 import 'package:store_app/core/widgets/custom_button.dart';
 import 'package:store_app/core/widgets/custom_image_widget.dart';
@@ -36,7 +36,7 @@ class ProfileViewBody extends StatelessWidget {
             children: [
               Text(
                 '${userInfoModel?.firstName}' ' ${userInfoModel?.lastName}',
-                style: Styles.textStyle20.copyWith(fontWeight: FontWeight.w400),
+                style: AppStyles.semiBold20.copyWith(fontWeight: FontWeight.w400),
               )
             ],
           ),

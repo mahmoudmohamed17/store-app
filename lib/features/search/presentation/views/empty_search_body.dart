@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/assets_data.dart';
 
 class EmptySearchBody extends StatelessWidget {
@@ -16,7 +16,7 @@ class EmptySearchBody extends StatelessWidget {
         Text(
           textAlign: TextAlign.center,
           'No search feed\nHit a tab to start!',
-          style: Styles.textStyle20.copyWith(fontWeight: FontWeight.w400),
+          style: AppStyles.semiBold20.copyWith(fontWeight: FontWeight.w400),
         )
       ],
     );

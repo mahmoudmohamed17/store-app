@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
 class CutsomDataField extends StatelessWidget {
   const CutsomDataField({super.key, required this.icon, required this.text});
@@ -28,7 +28,7 @@ class CutsomDataField extends StatelessWidget {
               ),
               Text(
                 text,
-                style: Styles.textStyle16.copyWith(fontWeight: FontWeight.w400),
+                style: AppStyles.semiBold16.copyWith(fontWeight: FontWeight.w400),
               )
             ],
           ),

@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
 import 'package:store_app/features/favorites/presentation/manager/favorites_cubit/favorites_cubit.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
@@ -65,14 +65,14 @@ class ProductItem extends StatelessWidget {
                                 product.title ?? '',
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
-                                style: Styles.textStyle16,
+                                style: AppStyles.semiBold16,
                               )),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Text(
                                 r'$' '${product.price}',
-                                style: Styles.textStyle16,
+                                style: AppStyles.semiBold16,
                               ),
                               RatingWidget(
                                 rate: product.rate ?? 0.0,

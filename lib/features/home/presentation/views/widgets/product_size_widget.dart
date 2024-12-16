@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/constanst.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
 class ProductSizeWidget extends StatelessWidget {
   const ProductSizeWidget({super.key, required this.isActive, this.onTap, required this.size});
@@ -24,7 +24,7 @@ class ProductSizeWidget extends StatelessWidget {
               alignment: Alignment.center,
               child: Text(
                size,
-                style: Styles.textStyle12,
+                style: AppStyles.medium12,
               ),
             ),
           ),

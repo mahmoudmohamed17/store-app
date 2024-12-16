@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
 class SampleSquareCard extends StatelessWidget {
   const SampleSquareCard(
@@ -28,7 +28,7 @@ class SampleSquareCard extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               text,
-              style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w600),
+              style: AppStyles.medium14.copyWith(fontWeight: FontWeight.w600),
             ),
           ),
         ),

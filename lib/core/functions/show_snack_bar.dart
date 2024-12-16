@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../styles/styles.dart';
+import '../utilities/app_styles.dart';
 
 void showSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       duration: const Duration(milliseconds: 2000),
       content: Text(
         message,
-        style: Styles.textStyle16,
+        style: AppStyles.semiBold16,
       )));
 }

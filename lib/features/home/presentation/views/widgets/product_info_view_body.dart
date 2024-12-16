@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:store_app/constanst.dart';
-import 'package:store_app/core/utilities/functions/show_snack_bar.dart';
+import 'package:store_app/core/functions/show_snack_bar.dart';
 import 'package:store_app/core/widgets/custom_button.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';

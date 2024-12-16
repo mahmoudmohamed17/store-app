@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:store_app/core/utilities/functions/show_snack_bar.dart';
+import 'package:store_app/core/functions/show_snack_bar.dart';
 import 'package:store_app/features/favorites/presentation/manager/favorites_cubit/favorites_cubit.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
 

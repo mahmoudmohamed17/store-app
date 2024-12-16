@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -14,7 +14,7 @@ class CustomAppBar extends StatelessWidget {
       children: [
         Text(
           text,
-          style: Styles.textStyle20,
+          style: AppStyles.semiBold20,
         ),
         GestureDetector(
           onTap: () {

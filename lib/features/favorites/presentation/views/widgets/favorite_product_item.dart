@@ -5,7 +5,7 @@ import 'package:store_app/features/favorites/presentation/manager/favorites_cubi
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
 import 'package:store_app/features/home/presentation/views/widgets/rating_widget.dart';
 
-import '../../../../../core/styles/styles.dart';
+import '../../../../../core/utilities/app_styles.dart';
 
 class FavoriteProductItem extends StatelessWidget {
   const FavoriteProductItem({super.key, required this.product});
@@ -53,11 +53,11 @@ class FavoriteProductItem extends StatelessWidget {
                       product.title ?? '',
                       overflow: TextOverflow.ellipsis,
                       maxLines: 4,
-                      style: Styles.textStyle16,
+                      style: AppStyles.semiBold16,
                     )),
                 Text(
                   r'$''${product.price}',
-                  style: Styles.textStyle16,
+                  style: AppStyles.semiBold16,
                 ),
               ],
             ),

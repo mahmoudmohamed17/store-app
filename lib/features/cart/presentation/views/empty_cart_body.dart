@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/assets_data.dart';
 
 class EmptyCartBody extends StatelessWidget {
@@ -21,7 +21,7 @@ class EmptyCartBody extends StatelessWidget {
         ),
         const Text(
           'Your cart is empty!',
-          style: Styles.textStyle24,
+          style: AppStyles.medium24,
         ),
         const SizedBox(
           height: 10,

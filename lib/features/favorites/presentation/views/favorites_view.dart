@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/features/favorites/presentation/views/widgets/favorites_view_body.dart';
 
 class FavoritesView extends StatelessWidget {
@@ -15,7 +15,7 @@ class FavoritesView extends StatelessWidget {
             padding: EdgeInsets.only(right: 15),
             child: Text(
               'Favorites',
-              style: Styles.textStyle20,
+              style: AppStyles.semiBold20,
             ),
           )
         ],

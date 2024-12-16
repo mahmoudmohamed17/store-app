@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
 
-import '../../../../../core/styles/styles.dart';
+import '../../../../../core/utilities/app_styles.dart';
 
 class CustomProductData extends StatelessWidget {
   const CustomProductData({super.key, required this.product});
@@ -41,12 +41,12 @@ class CustomProductData extends StatelessWidget {
                 product.title ?? '',
                 maxLines: 10,
                 overflow: TextOverflow.ellipsis,
-                style: Styles.textStyle20,
+                style: AppStyles.semiBold20,
               ),
             ),
             Text(
              r'$''${product.price}',
-              style: Styles.textStyle16,
+              style: AppStyles.semiBold16,
             )
           ],
         ),
@@ -55,7 +55,7 @@ class CustomProductData extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(
             product.description ?? '',
-            style: Styles.textStyle16.copyWith(fontWeight: FontWeight.w400),
+            style: AppStyles.semiBold16.copyWith(fontWeight: FontWeight.w400),
           ),
         ),
       ],

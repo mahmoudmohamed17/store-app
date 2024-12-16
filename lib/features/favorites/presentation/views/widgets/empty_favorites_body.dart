@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/styles/styles.dart';
+import '../../../../../core/utilities/app_styles.dart';
 import '../../../../../core/utilities/assets_data.dart';
 
 class EmptyFavoritesBody extends StatefulWidget {
@@ -35,7 +35,7 @@ class _EmptyFavoritesBodyState extends State<EmptyFavoritesBody> {
             child: Text(
               textAlign: TextAlign.center,
               'There\'s no favorite products in your list!',
-              style: Styles.textStyle24,
+              style: AppStyles.medium24,
             ),
           ),
           const SizedBox(

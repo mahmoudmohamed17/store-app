@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
 import 'package:store_app/features/home/presentation/views/widgets/product_item.dart';
 
@@ -18,7 +18,7 @@ class ResultSearchBody extends StatelessWidget {
         ),
         Text(
           (category == 'jewelery') ? 'JEWELRY' : category.toUpperCase(),
-          style: Styles.textStyle20,
+          style: AppStyles.semiBold20,
         ),
         const SizedBox(
           height: 10,

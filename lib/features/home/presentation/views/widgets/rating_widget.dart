@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/styles/styles.dart';
+import '../../../../../core/utilities/app_styles.dart';
 
 class RatingWidget extends StatelessWidget {
   const RatingWidget({super.key, required this.rate});
@@ -11,7 +11,7 @@ class RatingWidget extends StatelessWidget {
       children: [
         Text(
           rate.toString(),
-          style: Styles.textStyle14,
+          style: AppStyles.medium14,
         ),
         const SizedBox(
           width: 5,

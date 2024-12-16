@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/features/search/presentation/manager/get_specific_category_cubit/get_specific_category_cubit.dart';
 
 class SearchProductItem extends StatelessWidget {
@@ -34,7 +34,7 @@ class SearchProductItem extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               title,
-              style: Styles.textStyle20.copyWith(color: Colors.white),
+              style: AppStyles.semiBold20.copyWith(color: Colors.white),
             ),
           ),
         ),

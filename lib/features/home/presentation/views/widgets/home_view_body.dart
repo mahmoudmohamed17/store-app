@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/widgets/custom_app_bar.dart';
 import 'package:store_app/features/home/presentation/manager/get_all_products_cubit/get_all_products_cubit.dart';
 import 'package:store_app/features/home/presentation/views/widgets/product_grid_view.dart';
@@ -36,7 +36,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
             children: [
               Text(
                 'Popular products',
-                style: Styles.textStyle16.copyWith(color: Colors.black),
+                style: AppStyles.semiBold16.copyWith(color: Colors.black),
               ),
             ],
           ),
@@ -53,7 +53,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                 return Center(
                   child: Text(
                     state.errorMsg,
-                    style: Styles.textStyle20,
+                    style: AppStyles.semiBold20,
                   ),
                 );
               } else {

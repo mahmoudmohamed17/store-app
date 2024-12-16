@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:store_app/constanst.dart';
 import 'package:store_app/core/utilities/app_router.dart';
-import 'package:store_app/core/utilities/functions/setup_service_locator.dart';
+import 'package:store_app/core/functions/setup_service_locator.dart';
 import 'package:store_app/features/auth/data/models/user_info_model.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import 'package:store_app/features/favorites/presentation/manager/favorites_cubit/favorites_cubit.dart';

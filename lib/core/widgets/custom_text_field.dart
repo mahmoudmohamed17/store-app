@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/constanst.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField({
@@ -31,13 +31,13 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           return null;
         }
       },
-      style: Styles.textStyle20,
+      style: AppStyles.semiBold20,
       onFieldSubmitted: widget.onFieldSubmitted,
       obscureText: (widget.hintText != 'Password') ? false : obscureText,
       keyboardType: widget.textInputType,
       decoration: InputDecoration(
         hintText: widget.hintText,
-        hintStyle: Styles.textStyle16.copyWith(color: Colors.grey),
+        hintStyle: AppStyles.semiBold16.copyWith(color: Colors.grey),
         suffixIcon: (widget.hintText == 'Password')
             ? (obscureText == true)
                 ? Padding(

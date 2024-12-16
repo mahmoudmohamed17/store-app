@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
 import 'package:store_app/core/utilities/assets_data.dart';
 import 'package:store_app/core/widgets/custom_button.dart';
@@ -11,8 +11,8 @@ import 'package:store_app/core/widgets/custom_text_field.dart';
 import 'package:store_app/features/auth/data/models/user_info_model.dart';
 import 'package:store_app/features/auth/presentation/manager/auth_cubit/auth_cubit.dart';
 
-import '../../../../../core/utilities/functions/setup_service_locator.dart';
-import '../../../../../core/utilities/functions/show_snack_bar.dart';
+import '../../../../../core/functions/setup_service_locator.dart';
+import '../../../../../core/functions/show_snack_bar.dart';
 import '../../../domain/auth_repo.dart';
 
 UserInfoModel? userInfoModel;
@@ -58,7 +58,7 @@ class _LoginBodyState extends State<LoginBody> {
                 const Text(
                   textAlign: TextAlign.center,
                   'Sign in',
-                  style: Styles.textStyle24,
+                  style: AppStyles.medium24,
                 ),
                 const SizedBox(
                   height: 35,
@@ -111,7 +111,7 @@ class _LoginBodyState extends State<LoginBody> {
                   children: [
                     const Text(
                       'Don\'t have an accouunt?   ',
-                      style: Styles.textStyle16,
+                      style: AppStyles.semiBold16,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -120,7 +120,7 @@ class _LoginBodyState extends State<LoginBody> {
                       },
                       child: Text(
                         'Register',
-                        style: Styles.textStyle16.copyWith(
+                        style: AppStyles.semiBold16.copyWith(
                           decoration: TextDecoration.underline,
                           decorationThickness: 2.2,
                         ),

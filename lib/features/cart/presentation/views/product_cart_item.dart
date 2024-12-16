@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import 'package:store_app/features/cart/presentation/views/add_product_counter_widget.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
-import '../../../../core/styles/styles.dart';
+import '../../../../core/utilities/app_styles.dart';
 
 class ProductCartItem extends StatelessWidget {
   const ProductCartItem({super.key, required this.product});
@@ -46,7 +46,7 @@ class ProductCartItem extends StatelessWidget {
                         product.title ?? '',
                         overflow: TextOverflow.ellipsis,
                         maxLines: 3,
-                        style: Styles.textStyle16,
+                        style: AppStyles.semiBold16,
                       ),
                     )),
                 Padding(
@@ -54,7 +54,7 @@ class ProductCartItem extends StatelessWidget {
                   child: Text(
                     r'$' '${product.price}',
                     style:
-                        Styles.textStyle14.copyWith(fontWeight: FontWeight.w600),
+                        AppStyles.medium14.copyWith(fontWeight: FontWeight.w600),
                   ),
                 ),
                 const SizedBox(

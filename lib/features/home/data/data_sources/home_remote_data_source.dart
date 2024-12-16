@@ -2,8 +2,8 @@ import 'package:store_app/constanst.dart';
 import 'package:store_app/core/utilities/api_service.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
 
-import '../../../../core/utilities/functions/get_products_list.dart';
-import '../../../../core/utilities/functions/save_box_data.dart';
+import '../../../../core/functions/get_products_list.dart';
+import '../../../../core/functions/save_box_data.dart';
 
 abstract class HomeRemoteDataSource {
   Future<List<ProductEntity>> getAllProducts();

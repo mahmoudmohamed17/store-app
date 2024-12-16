@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:store_app/core/styles/styles.dart';
+import 'package:store_app/core/utilities/app_styles.dart';
 import 'package:store_app/core/utilities/app_router.dart';
 import 'package:store_app/core/widgets/custom_button.dart';
 import 'package:store_app/main_view.dart';
@@ -16,7 +16,7 @@ void showAlertingDialog(BuildContext context) {
           actionsAlignment: MainAxisAlignment.spaceEvenly,
           title: const Text(
             'Are you really want to leave?',
-            style: Styles.textStyle20,
+            style: AppStyles.semiBold20,
           ),
           actions: [
             CustomButton(

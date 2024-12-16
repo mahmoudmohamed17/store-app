@@ -4,10 +4,10 @@ import 'package:go_router/go_router.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:store_app/features/auth/presentation/manager/auth_cubit/auth_cubit.dart';
 
-import '../../../../../core/styles/styles.dart';
+import '../../../../../core/utilities/app_styles.dart';
 import '../../../../../core/utilities/assets_data.dart';
-import '../../../../../core/utilities/functions/setup_service_locator.dart';
-import '../../../../../core/utilities/functions/show_snack_bar.dart';
+import '../../../../../core/functions/setup_service_locator.dart';
+import '../../../../../core/functions/show_snack_bar.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_image_widget.dart';
 import '../../../../../core/widgets/custom_text_field.dart';
@@ -54,7 +54,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                 const Text(
                   textAlign: TextAlign.center,
                   'Register',
-                  style: Styles.textStyle24,
+                  style: AppStyles.medium24,
                 ),
                 const SizedBox(
                   height: 35,
