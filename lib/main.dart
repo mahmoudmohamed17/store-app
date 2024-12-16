@@ -9,11 +9,15 @@ import 'package:store_app/features/auth/data/models/user_info_model.dart';
 import 'package:store_app/features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import 'package:store_app/features/favorites/presentation/manager/favorites_cubit/favorites_cubit.dart';
 import 'package:store_app/features/home/domain/entities/product_entity.dart';
+import 'package:store_app/firebase_options.dart';
 import 'package:store_app/sample_bloc_observerd.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   await Hive.initFlutter();
   Hive.registerAdapter(ProductEntityAdapter());
   Hive.registerAdapter(UserInfoModelAdapter());
