@@ -4,10 +4,15 @@ import 'rating.dart';
 
 class ProductModel extends ProductEntity {
   final int? id;
+  // ignore: annotate_overrides, overridden_fields
   final String? title;
+  // ignore: annotate_overrides, overridden_fields
   final num? price;
+  // ignore: annotate_overrides, overridden_fields
   final String? description;
+  // ignore: annotate_overrides, overridden_fields
   final String? category;
+  // ignore: annotate_overrides, overridden_fields
   final String? image;
   final Rating? rating;
 
